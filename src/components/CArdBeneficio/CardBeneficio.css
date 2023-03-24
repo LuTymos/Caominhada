@@ -1,0 +1,35 @@
+.CardBeneficios{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin: 5px 0;
+    justify-content: center;
+}
+
+.CardBeneficios div.img{
+    background-color: #52DAB1;
+    /* min-width: 200px; */
+    width: 160px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CardBeneficios div.img img{
+    width: 80%;
+    max-width: 80%;
+}
+
+.CardBeneficios div.infos{
+    width: 50%;
+    font-size: 15px;
+    padding: 7px 0;
+}
+
+
+.CardBeneficios div.infos p{
+    font-size: 16px;
+    margin-top: 15px;
+}
