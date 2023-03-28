@@ -1,0 +1,49 @@
+.DepoimentoCard {
+    
+    width: 100%;
+    justify-content: space-between;
+    max-width: 380px;
+    padding: 20px;
+    background-color: white;
+    /* border: thin solid black; */
+    border-width: thin;
+    margin: 60px auto;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 11px 25px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 11px 25px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 11px 25px -8px rgba(0, 0, 0, 0.75);
+}
+
+.DepoimentoCard:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.DepoimentoCard .bloco{
+    width: 40%;
+    height: 100%;
+}
+
+.DepoimentoCard .depoimento{
+    width: 50%;
+}
+
+.DepoimentoCard .depoimento p{
+    font-size: 14px;
+}
+
+.DepoimentoCard .bloco .foto{
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%;
+    transform: translate(0px, calc(-50% - 10px));
+}
+
+.DepoimentoCard .bloco .nome{
+    width: 100%;
+    font-weight: bolder;
+    transform: translateY(-40px);
+}

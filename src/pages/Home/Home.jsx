@@ -1,5 +1,6 @@
 import Banner from "../../components/banner/Banner";
 import Beneficios from "../../components/beneficios/Beneficios";
+import Depoimentos from "../../components/Depoimentos/Depoimentos";
 import Header from "../../components/Header/Header";
 import Sessao from "../../components/Sessao/Sessao";
 
@@ -15,6 +16,8 @@ function Home() {
             <Sessao />
             
             <Beneficios/>
+
+            <Depoimentos/>
         </div>
     );
 }
