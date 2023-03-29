@@ -10,7 +10,6 @@ import Sessao from "../../components/Sessao/Sessao";
 function Home() {
     return (
         <div className="Home">
-            <Header />
 
             <Banner />
 
@@ -20,7 +19,6 @@ function Home() {
 
             <Depoimentos/>
 
-            <Footer/>
         </div>
     );
 }

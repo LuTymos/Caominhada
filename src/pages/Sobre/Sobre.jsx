@@ -1,6 +1,6 @@
 function Sobre() {
     return ( 
-        <div className="Sobre"></div>
+        <div className="Sobre">SObre!</div>
      );
 }
 
