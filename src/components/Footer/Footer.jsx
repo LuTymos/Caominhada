@@ -15,9 +15,9 @@ function Footer() {
 
             <div className="contatos">
                 <h3>Contatos:</h3>
-            <div className="contato"><FaWhatsappSquare className='i'/> (11)97828-1477</div>
-            <div className="contato"><FaInstagramSquare className='i'/> @caominhada</div>
-            <div className="contato"><MdEmail className='i'/> caominhada@gmail.com</div>
+            <div className="contato"><FaWhatsappSquare className='i'/> <p>(11)97828-1477</p></div>
+            <div className="contato"><FaInstagramSquare className='i'/> <p>@caominhada</p></div>
+            {/* <div className="contato"><MdEmail className='i'/> <p>caominhada@gmail.com</p></div> */}
             </div>
 
         </footer>

@@ -6,7 +6,7 @@ function DepoimentoCard(props) {
     return (
         <div className="DepoimentoCard">
             <div className="bloco">
-                <div className="foto"></div>
+                <div className="foto"><img src={props.img} alt="" /></div>
                 <p className="nome">{props.nome}</p>
             </div>
             <div className="depoimento">

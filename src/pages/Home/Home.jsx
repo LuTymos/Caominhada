@@ -1,13 +1,27 @@
+import { useEffect } from "react";
+import { useState } from "react";
 import Banner from "../../components/banner/Banner";
 import Beneficios from "../../components/beneficios/Beneficios";
 import Depoimentos from "../../components/Depoimentos/Depoimentos";
-import Footer from "../../components/Footer/Footer";
-import Header from "../../components/Header/Header";
 import Sessao from "../../components/Sessao/Sessao";
 
-
+const url = 'https://randomuser.me/api/?nat=br&results=3&inc=name,picture'
 
 function Home() {
+
+    const [people, setPeople] = useState([])
+
+    const fetchUser = async() =>{
+        const resp = await fetch(url)
+        const people = await resp.json()
+        setPeople(people.results)
+    }
+
+    useEffect(()=>{
+        fetchUser()
+    }, [])
+
+    
     return (
         <div className="Home">
 
@@ -17,7 +31,7 @@ function Home() {
             
             <Beneficios/>
 
-            <Depoimentos/>
+            <Depoimentos people={people}/>
 
         </div>
     );
