@@ -1,14 +1,7 @@
 .Banner{
-    width: 100%;
-    height: 260px;
-    background-color: #03D797;
     margin-top: 30px;
-    background-image: url('img/bg-oculos.png');
-    background-repeat: no-repeat;
-    background-size: 200px;
-    background-position: bottom 0 right -20px;
-    padding: 60px 20px;
 }
+
 
 .Banner p{
     color: white;
@@ -31,4 +24,58 @@
 .Banner button a{
     color: black;
     text-decoration: none;
+}
+
+.Banner .container {
+    width: 100%;
+    height: 260px;
+    background-color: #03D797;
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 30px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.Banner .container img{
+    max-width: 250px;
+    width: 50%;
+    min-width: 200px;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+
+@media screen and (max-width:360px) {
+    .Banner .container img{
+        right: -20px;
+    }
+    .Banner .container {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .Banner .container {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 740px){
+    .Banner .container {
+        padding: 0 180px;
+    }
+
+    .Banner .container img{
+        right: 100px;
+        bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .Banner .container img{
+        right: 180px;
+        bottom: 0;
+    }
 }

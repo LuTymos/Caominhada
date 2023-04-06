@@ -1,32 +1,43 @@
-.footer{
+.footer {
     width: 100%;
     height: 220px;
     background-color: #FDBF46;
+
+}
+
+.footer .container {
     padding: 30px;
     display: flex;
     gap: 8%;
     justify-content: center;
 }
 
-.footer .localizacao img{
+.footer .localizacao img {
     width: 150px;
 }
 
-.footer .contatos .contato{
+.footer .contatos .contato {
     display: flex;
     margin: 8px 0;
     align-items: center;
     gap: 10px;
 }
 
-.footer .contatos h3{
+.footer .contatos h3 {
     margin-bottom: 10px;
 }
 
-.footer .contatos .contato .i{
+.footer .contatos .contato .i {
     font-size: 30px;
 }
 
-.footer .contatos .contato p{
+.footer .contatos .contato p {
     font-size: 13px;
+}
+
+@media screen and (min-width:740px) {
+    .footer .container {
+        max-width: 500px;
+        justify-content: space-between;
+    }
 }

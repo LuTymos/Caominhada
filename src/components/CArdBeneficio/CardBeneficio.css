@@ -1,21 +1,22 @@
 .CardBeneficios{
     width: 100%;
     display: flex;
-    gap: 7%;
-    margin: 5px 0;
-    justify-content: center;
+    gap: 20px;
 }
+
+
 
 .CardBeneficios div.img{
     background-color: #52DAB1;
-    /* min-width: 200px; */
-    width: 160px;
-    height: 150px;
+    max-width: 200px;
+    height: fit-content;
+    padding: 15px 0;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 
 .CardBeneficios div.img img{
     width: 80%;
@@ -33,3 +34,20 @@
     font-size: 16px;
     margin-top: 15px;
 }
+
+@media screen and (min-width:740px) {
+    .CardBeneficios{
+        flex-direction: column;
+        width: 200px;
+    }  
+    .CardBeneficios div.infos{
+        width: 100%;
+        text-align: center;
+    }
+    .CardBeneficios div.infos p{
+        text-align: justify;
+    }
+    .CardBeneficios div.img{
+        max-width: 200px;
+    }
+} 

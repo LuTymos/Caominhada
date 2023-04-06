@@ -11,15 +11,17 @@ function Home() {
 
     const [people, setPeople] = useState([])
 
-    const fetchUser = async() =>{
-        const resp = await fetch(url)
-        const people = await resp.json()
-        setPeople(people.results)
-    }
-
+    
     useEffect(()=>{
+        
+        const fetchUser = async() =>{
+            const resp = await fetch(url)
+            const people = await resp.json()
+            setPeople(people.results)
+        }     
+        
         fetchUser()
-    }, [])
+    },[])
 
     
     return (

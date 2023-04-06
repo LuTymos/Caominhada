@@ -1,27 +1,27 @@
-.Sessao{
-    padding: 30px;
+.Sessao {
+    padding: 30px 6%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.Sessao h2{
+.Sessao h2 {
     margin-bottom: 20px;
 }
 
-.Sessao .img{
-    background-image: url('img/caminhando.png');
-    height: 230px;
+.Sessao img {
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
     margin-bottom: 20px;
+    max-width: 400px;
 }
 
-.Sessao p{
+.Sessao p {
     font-size: 16px;
     /* text-align: justify; */
     font-weight: 400;
+    max-width: 500px;
 }
 
-.Sessao button{
+.Sessao button {
     border: none;
     background-color: #FDBF46;
     padding: 10px 20px;
@@ -30,11 +30,40 @@
     cursor: pointer;
 }
 
-.Sessao button:hover{
+.Sessao button:hover {
     background-color: #dfa126;
 }
 
-.Sessao button a{
+.Sessao button a {
     text-decoration: none;
     color: black;
+}
+
+.Sessao .container {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media screen and (min-width:740px) {
+    .Sessao .container{
+        flex-direction: row;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .Sessao img{
+        max-width: 330px;
+    }
+
+    .Sessao .texto{
+        max-width: 350px;
+        text-align: justify;
+    }
+
+
 }

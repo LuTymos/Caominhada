@@ -1,4 +1,62 @@
 .Depoimentos{
     width: 100%;
     padding: 0 30px;
+    display: flex;
+}
+
+.Depoimentos .container{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 0px;
+    align-items: normal;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Depoimentos .container .blocoContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.Depoimentos .container .blocoContainer .pata{
+    display: none;
+}
+
+@media screen and (min-width:740px) {
+    
+    .Depoimentos .container{
+        padding: 0 40px;
+    }
+    .Depoimentos .container .blocoContainer:nth-child(even){
+        flex-direction: row-reverse;
+    }
+    
+    .Depoimentos .container .blocoContainer .pata:nth-child(even){
+        width: 70px;
+        height: 70px;
+        transform: rotate(-20deg);
+        opacity: 0.70;
+    }
+    .Depoimentos .container .blocoContainer .pata:nth-child(odd){
+        width: 70px;
+        height: 70px;
+        transform: rotate(-20deg);
+        opacity: 0.70;
+    }
+
+    .Depoimentos .container .DepoimentoCard:nth-child(odd){
+        align-self: flex-start;
+    }
+    .Depoimentos .container .DepoimentoCard:nth-child(even){
+        align-self: flex-end;
+    }
+    .Depoimentos .container .blocoContainer .pata{
+        display: block;
+    }
+    
 }

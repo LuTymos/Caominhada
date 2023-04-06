@@ -16,10 +16,28 @@ function Header() {
 
     return (
         <div className="Header">
+            <div className="container">
             <img src="./img/logo.png" alt="" />
 
+            <nav className="desktop-menu">
+                <ul>
+                    <li>
+                        <Link className='link' to='/'>Home</Link>
+                    </li>
+                    <li>
+                        <Link className='link' to='/Sobre'>Sobre</Link>
+                    </li>
+                    <li>
+                        <Link className='link'>Blog</Link>
+                    </li>
+                    <li>
+                        <Link className='link'>FAQ</Link>
+                    </li>
+                </ul>
+            </nav>
 
-            <span onClick={()=>{setMenu('menu-on')}}><FiMenu  className='icon imenu' /></span>
+
+            <span className='menu-mobile' onClick={()=>{setMenu('menu-on')}}><FiMenu  className='icon imenu' /></span>
 
             <div className={`menu ${Menu}`}>
                 {/* Switch pego no site UiVerse: */}
@@ -49,6 +67,7 @@ function Header() {
                         </li>
                     </ul>
                 </nav>
+            </div>
             </div>
         </div>
     );
