@@ -1,0 +1,29 @@
+.FAQ{
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.FAQ .container{
+    max-width: 1000px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+.FAQ a{
+    text-decoration: none;
+    color: #000;
+    background-color: #FDBF46;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+
+}
