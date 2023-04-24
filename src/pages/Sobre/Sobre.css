@@ -1,0 +1,53 @@
+.Sobre .container{
+    max-width: 1000px;
+    margin: 30px auto;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    flex-wrap: wrap;
+}
+
+
+
+.Sobre .container img{
+    width: 275px;
+}
+
+.Sobre .container .bloco{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Sobre .container .bloco p{
+    width: 275px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.icons{
+    align-self: flex-end;
+}
+
+.Sobre .container .bloco .icon{
+    font-size: 40px;
+}
+
+.equipe{
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 30px;
+}
+
+.equipe .container{
+    max-width: 1000px;
+    margin: 60px auto;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    flex-wrap: wrap;
+}
