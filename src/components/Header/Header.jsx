@@ -14,7 +14,7 @@ function Header() {
     return (
         <div className="Header">
             <div className="container">
-                <img src="./img/logo.png" alt="" />
+                <Link to='/'><img src="./img/logo.png" alt="" /></Link>
 
                 <nav className="desktop-menu">
                     <ul>
