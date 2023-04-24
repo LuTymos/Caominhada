@@ -7,9 +7,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 .blog img{
     width: 50%;
+}
 
+.blog p{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+@media screen and (max-width: 726px) {
+    .blog{
+        flex-direction: column-reverse;
+
+    }
+
+    .blog img{
+        width: 100%;
+    }
+
+    
 }
