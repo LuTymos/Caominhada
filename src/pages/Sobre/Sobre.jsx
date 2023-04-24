@@ -23,8 +23,8 @@ function Sobre() {
                 <EquipeCard nome='Lucas Camilo' funcao='Passeador'/>
                 <EquipeCard nome='Douglas Carvalho' funcao='Passeador'/>
                 <EquipeCard nome='Yasmin Rodrigues' funcao='Atendente'/>
-                <EquipeCard nome='Marcello Ladislau' funcao='Passeador'/>
-                <EquipeCard nome='Lucas Camilo' funcao='Passeador'/>
+                <EquipeCard nome='Marcello Ladislau' funcao='Atendente'/>
+                <EquipeCard nome='Yasmin Moura' funcao='Passeadora'/>
                 </div>
             </section>
         </div>
